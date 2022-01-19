@@ -1,4 +1,4 @@
-# ICB Place Based Allocation Tool
+# NHS Streamlit App Template
 
 [![Python v3.8](https://img.shields.io/badge/python-v3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
 
