@@ -41,7 +41,7 @@ st.set_page_config(
     menu_items={
         "Get Help": "https://github.com/",
         "Report a bug": "https://github.com/",
-        "About": "For more information on the latest allocations, including contact details, please refer to: [link](https://github.com/)",
+        "About": "For more information, including contact details, please refer to: [link](https://github.com/)",
     },
 )
 padding = 1
@@ -52,21 +52,6 @@ st.markdown(
     }} </style> """,
     unsafe_allow_html=True,
 )
-
-# Set default place in session
-# -------------------------------------------------------------------------
-if len(st.session_state) < 1:
-    st.session_state["Default Place"] = {
-        "gps": [
-            "B85005: Shepley Health Centre",
-            "B85022: Honley Surgery",
-            "B85061: Skelmanthorpe Family Doctors",
-            "B85026: Kirkburton Health Centre",
-        ],
-        "icb": "NHS West Yorkshire ICB",
-    }
-if "places" not in st.session_state:
-    st.session_state.places = ["Default Place"]
 
 # Functions & Calls
 # -------------------------------------------------------------------------
