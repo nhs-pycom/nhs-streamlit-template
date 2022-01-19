@@ -152,7 +152,7 @@ icb = get_sidebar(data)
 
 # SIDEBAR
 # -------------------------------------------------------------------------
-st.sidebar.subheader("Create New Place")
+st.sidebar.subheader("Filter GP Practice")
 
 icb_choice = st.sidebar.selectbox("ICB Filter:", icb, help="Select an ICB")
 lad = data["LA District name"].loc[data["ICB name"] == icb_choice].unique().tolist()
@@ -228,22 +228,12 @@ csv = convert_df(data)
 with open("docs/calculations.txt", "rb") as fh:
     readme_text = io.BytesIO(fh.read())
 
-session_state_dict = dict.fromkeys(st.session_state.places, [])
-for key, value in session_state_dict.items():
-    session_state_dict[key] = st.session_state[key]
-session_state_dict["places"] = st.session_state.places
-session_state_dump = json.dumps(session_state_dict, indent=4, sort_keys=False)
-
 # https://stackoverflow.com/a/44946732
 zip_buffer = io.BytesIO()
 with zipfile.ZipFile(zip_buffer, "a", zipfile.ZIP_DEFLATED, False) as zip_file:
     for file_name, data in [
         ("calculations.csv", io.BytesIO(csv)),
-        ("calculations.txt", readme_text),
-        (
-            "configurationfile.json",
-            io.StringIO(session_state_dump),
-        ),
+        ("calculations.txt", readme_text)
     ]:
         zip_file.writestr(file_name, data.getvalue())
 
@@ -255,9 +245,9 @@ btn = st.download_button(
 )
 
 st.subheader("Help and Support")
-with st.expander("Expand"):
-    st.subheader("test")
-    st.markdown("test")
+with st.expander("About this app"):
+    st.subheader("Streamlit NHS Theme Template")
+    st.markdown("Developed for rapid deployment on new streamlit apps. Allows the user to filter to ICB/LAD/GP Practice.")
 st.info(
     "For support with using the tool please email: [craig.shenton@nhs.net](mailto:craig.shenton@nhs.net)"
 )
