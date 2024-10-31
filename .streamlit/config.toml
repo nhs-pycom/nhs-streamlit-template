@@ -5,3 +5,5 @@ backgroundColor="#ffffff"
 secondaryBackgroundColor="#e8eef9"
 textColor="#000000"
 font="sans serif"
+[client]
+showErrorDetails = false #this is to remove the cache error from showing - take this out when debugging
