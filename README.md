@@ -1,6 +1,6 @@
 # NHS Streamlit App Template
 
-[![Python v3.8](https://img.shields.io/badge/python-v3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Python v3.9](https://img.shields.io/badge/python-v3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
 ## Deployment (local)
 
