@@ -7,10 +7,10 @@
 """
 FILE:           nhstheme.py
 DESCRIPTION:    Streamlit NHS Theme Template
-CONTRIBUTORS:   Craig Shenton, Mattia Ficarelli   
-CONTACT:        craig.shenton@nhs.net
+CONTRIBUTORS:   Craig Shenton, Mattia Ficarelli, Sam Hollings   
+CONTACT:        nhspythoncommunity@england.nhs.uk
 CREATED:        2022-01-19
-VERSION:        0.0.1
+VERSION:        0.0.2
 """
 
 # Libraries

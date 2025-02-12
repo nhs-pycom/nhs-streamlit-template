@@ -1,6 +1,6 @@
 # NHS Streamlit App Template
 
-[![Python v3.8](https://img.shields.io/badge/python-v3.8-blue.svg)](https://www.python.org/downloads/release/python-380/)
+[![Python v3.9](https://img.shields.io/badge/python-v3.9-blue.svg)](https://www.python.org/downloads/release/python-390/)
 
 ## Deployment (local)
 
@@ -28,7 +28,7 @@ pip install -r requirements.txt
 To run the tool locally, open a terminal whilst in the directory containing the app and run
 
 ```bash
-streamlit run dashboard.py
+streamlit run nhstheme.py
 ```
 
 Streamlit will then render the tool and display it in your default web browser at
