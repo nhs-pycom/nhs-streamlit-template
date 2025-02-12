@@ -28,7 +28,7 @@ pip install -r requirements.txt
 To run the tool locally, open a terminal whilst in the directory containing the app and run
 
 ```bash
-streamlit run dashboard.py
+streamlit run nhstheme.py
 ```
 
 Streamlit will then render the tool and display it in your default web browser at
