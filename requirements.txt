@@ -5,4 +5,4 @@ streamlit~=1.39.0
 streamlit-aggrid~=1.0.5
 streamlit_folium~=0.23.1
 regex~=2024.9.11
-protobuf~=3.19.0
+protobuf~=3.20.0
